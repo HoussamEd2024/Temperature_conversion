@@ -1,0 +1,30 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+}
+
+#box {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid hsl(168, 71%, 49%); */
+  text-align: center;
+}
+
+#box button {
+  padding: 10px;
+  border: 1px solid hsl(0, 1%, 16%);
+  border-radius: 10px;
+  margin-left: 10px;
+  color: hsl(180, 100%, 97%);
+}
+#decreaseBtn {
+  background-color: hsl(0, 90%, 45%);
+}
+
+#increaseBtn {
+  background-color: hsl(231, 90%, 45%);
+}
+
+#resetBtn {
+  background-color: hsl(137, 90%, 45%);
+}
