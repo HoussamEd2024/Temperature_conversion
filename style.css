@@ -3,6 +3,9 @@ body {
   font-size: 1.5em;
 }
 
+#countHeading {
+  text-align: center;
+}
 #box {
   margin: auto;
   width: 50%;
