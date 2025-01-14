@@ -3,31 +3,46 @@ body {
   font-size: 1.5em;
 }
 
-#countHeading {
+#boxTemp {
   text-align: center;
-}
-#box {
+  width: 300px;
+  padding: 12px 30px;
   margin: auto;
-  width: 50%;
-  /* border: 3px solid hsl(168, 71%, 49%); */
+  border: 1px solid rgba(0, 0, 0, 0.242);
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+#tempconversion {
+  font-size: 1.3em;
+  color: rgb(0, 166, 237);
+}
+
+#textBox {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.42);
   text-align: center;
+  font-size: 20px;
+  width: 8em;
 }
 
-#box button {
+label {
+  font-size: 0.65em;
+  font-weight: bold;
+}
+
+#convertBtn {
+  margin-top: 20px;
+  width: 100px;
   padding: 10px;
-  border: 1px solid hsl(0, 1%, 16%);
-  border-radius: 10px;
-  margin-left: 10px;
-  color: hsl(180, 100%, 97%);
-}
-#decreaseBtn {
-  background-color: hsl(0, 90%, 45%);
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(0, 166, 237);
+  color: whitesmoke;
 }
 
-#increaseBtn {
-  background-color: hsl(231, 90%, 45%);
-}
-
-#resetBtn {
-  background-color: hsl(137, 90%, 45%);
+#convertBtn:hover {
+  background-color: rgb(52, 173, 225);
 }

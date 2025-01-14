@@ -1,28 +1,22 @@
 // Simple Counter Program
 
-let countHeading = document.getElementById("countHeading");
-let decreaseBtn = document.getElementById("decreaseBtn");
-let resetBtn = document.getElementById("resetBtn");
-let increaseBtn = document.getElementById("increaseBtn");
-let count = 0;
+const textBox = document.getElementById("textBox");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelcius = document.getElementById("toCelcius");
+const result = document.getElementById("result");
+let temp;
 
-function updateCountDisplay() {
-  countHeading.textContent = count;
+console.log(toFahrenheit.checked);
+function convert() {
+  if (toFahrenheit.checked) {
+    temp = +textBox.value;
+    temp = (9 / 5) * temp + 32;
+    result.textContent = temp.toFixed(2) + "°F";
+  } else if (toCelcius.checked) {
+    temp = +textBox.value;
+    temp = (9 / 5) * temp - 32;
+    result.textContent = temp.toFixed(2) + "°C";
+  } else {
+    result.textContent = "Select a unit";
+  }
 }
-
-decreaseBtn.addEventListener("click", () => {
-  count--;
-  updateCountDisplay();
-});
-
-resetBtn.addEventListener("click", () => {
-  count = 0;
-  updateCountDisplay();
-});
-
-increaseBtn.addEventListener("click", () => {
-  count++;
-  updateCountDisplay();
-});
-
-updateCountDisplay();
