@@ -1,4 +1,4 @@
-// Simple Counter Program
+// Simple Temperature Conversion Program
 
 const textBox = document.getElementById("textBox");
 const toFahrenheit = document.getElementById("toFahrenheit");
